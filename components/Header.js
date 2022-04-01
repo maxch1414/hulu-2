@@ -11,7 +11,7 @@ import {
   UserIcon,
 } from "@heroicons/react/outline";
 
-export default function () {
+const Header = () => {
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
       <div className="flex flex-grow justify-evenly max-w-2xl">
@@ -27,7 +27,11 @@ export default function () {
         src="https://links.papareact.com/ua6"
         width={200}
         height={100}
+        alt="Hulu Logo"
       />
     </header>
   );
-}
+};
+Header.displayName = 'Header'
+
+export default Header;
